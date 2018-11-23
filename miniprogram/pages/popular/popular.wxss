@@ -1,0 +1,35 @@
+/* pages/popular/popular.wxss */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+}
+.time{
+  display: flex;
+  align-items: flex-end;
+}
+.time-left{
+  padding-right: 10px;
+  border-right: 1px solid #000;
+}
+.time-right{
+  padding-left: 10px;
+}
+.time-left>text:nth-child(1){
+  vertical-align: bottom;
+  font-size: 32rpx;
+}
+.time-left>text:nth-child(2){
+  vertical-align: bottom;
+  margin-left: 5px;
+  font-size: 58rpx;
+}
+.time-right>view:nth-child(1){
+  text-align: left;
+  font-size: 24rpx;
+}
+.time-right>view:nth-child(2){
+  text-align: left;
+  font-size: 20rpx;
+}

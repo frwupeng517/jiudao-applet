@@ -1,0 +1,16 @@
+<!--pages/popular/popular.wxml-->
+<view>
+  <view class="header">
+    <view class="time">
+      <view class="time-left">
+        <text>No.</text>
+        <text>{{day}}</text>
+      </view>
+      <view class="time-right">
+        <view>{{month}}月</view>
+        <view>{{year}}</view>
+      </view>
+    </view>
+    <view class="operate"></view>
+  </view>
+</view>
