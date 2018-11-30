@@ -1,16 +1,14 @@
 <!--pages/popular/popular.wxml-->
-<view>
+<view class="popular-container">
   <view class="header">
-    <view class="time">
-      <view class="time-left">
-        <text>No.</text>
-        <text>{{day}}</text>
-      </view>
-      <view class="time-right">
-        <view>{{month}}月</view>
-        <view>{{year}}</view>
-      </view>
+    <time-cmp class="time" index="{{fakeData.index}}"></time-cmp>
+    <view class="operate">
+      <like-cmp class="like" is-like="{{fakeData.like_status}}" count="{{fakeData.fav_nums}}" bind:onlike="onLike"></like-cmp>
+      <share-btn-cmp class="share-btn" open-type='share'>
+        <image class="share" slot="img" src="/images/share.png" mode="widthFix"></image>
+      </share-btn-cmp> 
     </view>
-    <view class="operate"></view>
   </view>
+  <v-movie class="movie" wx:if="{{fakeData.type == 100}}" img="{{fakeData.img}}" content="{{fakeData.content}}"></v-movie>
+  <v-navi class="navi" title="{{fakeData.title}}"></v-navi>
 </view>

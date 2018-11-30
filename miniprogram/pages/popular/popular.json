@@ -1,1 +1,9 @@
-{}
+{
+  "usingComponents": {
+    "time-cmp": "/components/time/time",
+    "like-cmp": "/components/like/like",
+    "share-btn-cmp": "/components/share-btn/share",
+    "v-movie": "/components/popular/movie/index",
+    "v-navi": "/components/navi/index"
+  }
+}

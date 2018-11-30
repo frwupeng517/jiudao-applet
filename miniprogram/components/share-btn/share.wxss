@@ -1,0 +1,5 @@
+/* components/share-btn/share.wxss */
+.container{
+  padding: 0 !important;
+  border: none !important;
+}

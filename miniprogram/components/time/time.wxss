@@ -1,0 +1,39 @@
+/* components/time/time.wxss */
+
+.time{
+  display: flex;
+}
+.time-line{
+  height: 25px;
+  border-right: 1px solid #000;
+}
+.time-left{
+  display: flex;
+  align-items: baseline;
+  line-height: 26px;
+  padding-right: 10px;
+}
+.time-right{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-left: 10px;
+}
+.time-left>view:nth-child(1){
+  vertical-align: bottom;
+  font-size: 32rpx;
+}
+.time-left>view:nth-child(2){
+  vertical-align: bottom;
+  margin-left: 5px;
+  font-size: 58rpx;
+}
+.time-right>view:nth-child(1){
+  text-align: left;
+  font-size: 24rpx;
+}
+.time-right>view:nth-child(2){
+  text-align: left;
+  font-size: 20rpx;
+  line-height: 10px;
+}

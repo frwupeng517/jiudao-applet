@@ -1,0 +1,17 @@
+/* components/like/like.wxss */
+
+.like-cmp{
+  display: inline-flex;
+  padding: 10rpx;
+}
+.like-cmp image{
+  width: 32rpx;
+}
+.like-cmp .count{
+  position: relative;
+  left: 6rpx;
+  bottom: 10rpx;
+  line-height: 24rpx;
+  font-size: 24rpx;
+  color: #bbb;
+}

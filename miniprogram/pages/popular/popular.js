@@ -5,70 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-    year: "",
-    month: "",
-    day: ""
+    like: false,
+    count: 100,
+    fakeData: {
+      "content": "人生不能像做菜，把所有的料准备好才下锅",
+      "fav_nums": 11,
+      "id": 1,
+      "img": "http://bl.7yue.pro/images/movie.8.png",
+      "index": 7,
+      "like_status": 0,
+      "pubdate": "2018-06-22",
+      "title": "李安<<饮食男女>>",
+      "type": 100
+    }
+  },
+
+  onLike: function (event) {
+    console.log(event)
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let now = new Date(),
-      day = now.getDate() < 10 ? '0' + now.getDate() : now.getDate(),
-      month = now.getMonth() + 1,
-      year = now.getFullYear()
-    
-    let formatMonth = ''
-    
-    switch(month) {
-      case 1:
-        formatMonth = '一'
-        break
-      case 2:
-        formatMonth = '二'
-        break
-      case 3:
-        formatMonth = '三'
-        break
-      case 4:
-        formatMonth = '四'
-        break
-      case 5:
-        formatMonth = '五'
-        break
-      case 6:
-        formatMonth = '六'
-        break
-      case 7:
-        formatMonth = '七'
-        break
-      case 8:
-        formatMonth = '八'
-        break
-      case 9:
-        formatMonth = '九'
-        break
-      case 10:
-        formatMonth = '十'
-        break
-      case 11:
-        formatMonth = '十一'
-        break
-      case 12:
-        formatMonth = '十二'
-        break
-    }
-
-    this.setData({
-      year: year,
-      month: formatMonth,
-      day: day
+    /*
+    wx.request({
+      url: 'http://bl.7yue.pro/v1/classic/latest?appkey=98HcsgdJ3mx4Ufcm',
+      
+      success: res => {
+        console.log(res)
+      }
     })
-
-    console.log(day)
-    console.log(formatMonth)
-    console.log(year)
+    this.setData({
+      like: this.data.like,
+      count: this.data.count
+    })
+    */
   },
 
   /**

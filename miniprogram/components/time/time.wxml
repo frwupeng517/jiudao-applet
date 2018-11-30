@@ -1,0 +1,12 @@
+<!--components/time/time.wxml-->
+<view class="time">
+  <view class="time-left">
+    <view>No.</view>
+    <view>{{_index}}</view>
+  </view>
+  <view class="time-line"></view>
+  <view class="time-right">
+    <view>{{month}}</view>
+    <view>{{year}}</view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<!--components/like/like.wxml-->
+<view class="like-cmp">
+  <image src="{{isLike ? like_on_url: like_url}}" mode="widthFix" bindtap='onLike'></image>
+  <view class="count">{{count}}</view>
+</view>
